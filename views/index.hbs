@@ -1,0 +1,67 @@
+{{>header}}
+<div class="container">
+    <h1>Por favor ingrese los cursos</h1>
+    <hr>
+    <br>
+    <form action="/Coordinador" method="POST">
+        <div class="row">
+            <div class="col-3">
+                <div class="form-group">
+                    <label for="exampleInputEmail1">Id del curso</label>
+                    <input class="form-control form-control-sm" type="text" name="Idcurso" required>
+                </div>
+            </div>
+            <div class="col-3">
+                <div class="form-group">
+                    <label for="exampleInputEmail1">Nombre completo del curso</label>
+                    <input class="form-control form-control-sm" type="text" name="Nomcurso" required>
+                </div>
+            </div>
+            <div class="col-3">
+                <div class="form-group">
+                    <label for="exampleInputEmail1">Valor del curso</label>
+                    <input class="form-control form-control-sm" type="text" name="Valorcurso" required>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <div class="form-group">
+                    <label for="exampleFormControlTextarea1">Descripción</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" name="Descripcioncurso"
+                        required></textarea>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-3">
+                <div class="form-group">
+                    <label for="exampleFormControlSelect1">Modalidad</label>
+                    <select class="form-control" id="exampleFormControlSelect1" name="modalidadCurso">
+                        <option value=""></option>
+                        <option value="Virtual">Virtual</option>
+                        <option value="Presencial">Presencial</option>
+                        
+                    </select>
+                </div>
+            </div>
+            <div class="col-3">
+                <div class="form-group">
+                    <label for="exampleInputEmail1">Intensidad horaria</label>
+                    <input class="form-control form-control-sm" type="text" name="Intensidadcurso">
+                </div>
+            </div>
+        </div>
+        <button type="submit" class="btn btn-primary">Guardar</button>
+    </form>
+    <br>
+    <hr>
+    <h1>Cursos guardados</h1>
+    <hr>
+    <br>
+    {{{listar}}}
+
+</div>
+
+
+{{>footer}}

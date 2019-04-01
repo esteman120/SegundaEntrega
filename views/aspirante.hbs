@@ -1,0 +1,41 @@
+{{>header}}
+<div class="container">
+    <h1>Por favor ingrese sus datos</h1>
+    <hr>
+    <br>
+    <form action="/GuardarAspirante" method="POST">
+        <div class="row">
+            <div class="col-3">
+                <div class="form-group">
+                    <label for="exampleInputEmail1">Documento de identidad</label>
+                    <input class="form-control form-control-sm" type="text" name="documento" required>
+                </div>
+            </div>
+            <div class="col-3">
+                <div class="form-group">
+                    <label for="exampleInputEmail1">Nombre completo</label>
+                    <input class="form-control form-control-sm" type="text" name="nombre" required>
+                </div>
+            </div>
+            <div class="col-3">
+                <div class="form-group">
+                    <label for="exampleInputEmail1">Correo</label>
+                    <input class="form-control form-control-sm" type="text" name="correo" required>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <div class="form-group">
+                    <label for="exampleFormControlTextarea1">Telefono</label>
+                    <input class="form-control form-control-sm" type="text" name="telefono" required>
+                </div>
+            </div>
+        </div>        
+        <button type="submit" class="btn btn-primary">Guardar</button>
+    </form>   
+    
+</div>
+
+
+{{>footer}}
